@@ -1,0 +1,62 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+ul{
+    margin: 8px;
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: rgb(144, 238, 144);
+}
+
+li {
+    padding: 5px;
+    float: left;
+}
+
+li:hover{
+    background-color: rgb(100, 200, 100);
+    cursor: pointer;
+}
+
+li {
+    margin: 0px 5px;
+    padding: 10px 10px;
+    display: block;
+    text-align: center;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+#Profile {
+    float: right;
+}
+
+.Dropdown{
+    position: absolute;
+    width: 100%;
+    /* padding: 10px 10px; */
+    display: none;
+    margin-top: 0.65%;
+    margin-left: -0.65%;
+}
+
+#Profile:hover .Dropdown {
+    display: block;
+}
+
+.Dropdown a li{
+    position: relative;
+    width: 9.6%;
+    margin: 0%;
+    padding: 8px 8px;
+}
+
+.Dropdown a {
+    /* width: 100%; */
+}

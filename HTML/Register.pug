@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+
+    <script src="https://kit.fontawesome.com/5c901d5cc7.js" crossorigin="anonymous"></script>   
+
+    style
+        include ./CSS/base.css
+        include ./CSS/Register.css
+</head>
+<body>
+    <div class="container">
+        <div class="page">
+            <form action="/createAccount" id="register" method="post">
+                <div id="field">
+                    <span>
+                        <label for="FullName">Full Name</label>
+                        <label for="Email">E-mail</label>
+                        <label for="Password">Password</label>
+                        <label for="confirm_Password">Confirm Password</label>
+                    </span>
+                    //-  <span>
+                    //-      <i class="fa-solid fa-user"></i>
+                    //-      <i class="fa-solid fa-lock"></i>
+                    //-  </span>
+                    <span>
+                        <input type="text" name="FullName" id="FullName" placeholder="Full Name">
+                        <input type="text" name="Email" id="Email" placeholder="E-mail">
+                        <input type="password" name="Password" id="Password" placeholder="Password">
+                        <input type="password" name="confirm_Password" id="confirm_Password" placeholder="Confirm Password">
+                    </span>
+                </div>
+                <span id="passmatch"></span>
+                <input type="submit" value="submit" id="submit">
+                
+                <br>
+                <span> Already have an account? <a href="/Login">Sign In</a> 
+            </form>
+        </div>
+    </div>
+</body>
+</html>
